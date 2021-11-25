@@ -6,6 +6,7 @@
     - [Why use FSRs?](#why-use-fsrs)
     - [High-level Design](#high-level-design)
   - [Installation](#installation)
+  - [Fork-Specifc Info](#fork-specifc-info)
   - [Credits](#credits)
 
 ## Introduction
@@ -47,6 +48,10 @@ Setting up FSRs for gameplay with an app to adjust the sensitivities happens in 
 2. [Stand up the server.](https://github.com/vlnguyen/itg-fsr/tree/master/server) Create API endpoints for interacting with the Arduino and with a local profile database.
 3. [Run the web client.](https://github.com/vlnguyen/itg-fsr/tree/master/client) Once the client is running, the web app can be accessed by any device with a browser (phone, tablet, computer) to manage user profiles and sensor thresholds for up to two pads.
 
+## Fork-Specifc Info
+This fork will be focusing on adding PS1/PS2 functionality, making FSR pads usable for mentioned consoles. Side effect is pad will not be usable on PC (unless an adapter is used) and thresholds will be reset once the board loses power, requiring that the board be plugged in both PS and USB when flashing new thresholds. 
+
 ## Credits
 - Thank you [teejusb](https://github.com/teejusb)! He contributed what I used as a base for the hardware code. It was super easy understand and extend for my own use. ([teejusb/fsr](https://github.com/teejusb/fsr))
-  
+- [CrazyRedMachine](https://github.com/CrazyRedMachine/arduino-psx-controller/tree/usbemani) for the sample PSX controller code using USBemani v3's PSX code
+- [progmem](https://github.com/progmem/re-usbemani/) for the USBemani code and constant support on how to get things working with a PSX cable (wiring diagram to be added later) 
