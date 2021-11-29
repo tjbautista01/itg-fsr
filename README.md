@@ -54,4 +54,5 @@ This fork will be focusing on adding PS1/PS2 functionality, making FSR pads usab
 ## Credits
 - Thank you [teejusb](https://github.com/teejusb)! He contributed what I used as a base for the hardware code. It was super easy understand and extend for my own use. ([teejusb/fsr](https://github.com/teejusb/fsr))
 - [CrazyRedMachine](https://github.com/CrazyRedMachine/arduino-psx-controller/tree/usbemani) for the sample PSX controller code using USBemani v3's PSX code
-- [progmem](https://github.com/progmem/re-usbemani/) for the USBemani code and constant support on how to get things working with a PSX cable (wiring diagram to be added later) 
+- [progmem](https://github.com/progmem/re-usbemani/) for USBemani code and constant support on how to get things working with a PSX cable (wiring diagram to be added later) 
+- [veroxzik](https://github.com/veroxzik/arduino-psx-controller) for creating a simple-to-use PSX controller library
