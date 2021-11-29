@@ -50,6 +50,7 @@ Setting up FSRs for gameplay with an app to adjust the sensitivities happens in 
 
 ## Fork-Specifc Info
 This fork will be focusing on adding PS1/PS2 functionality, making FSR pads usable for mentioned consoles. PC functionality is same as parent so it will be compatible, but this fork has the addition of being able to assign pins as digital inputs (for when using a board with only a limited number of analog pins and other inputs are needed like a Start button). 
+
 Setting thresholds for PSX play can be done with the board plugged both in PSX controller port and USB. For more information regarding setup for PSX play, refer to #1 in Installation.  
 
 ## Credits

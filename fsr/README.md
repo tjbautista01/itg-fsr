@@ -66,6 +66,10 @@ If you're looking at this guide just for the circuit schema and the code to flas
   - What I did was take an existing cable, cut off the casing, and used the smaller copper wires inside.
 - **OPTIONAL:** Soldering iron and wire
   - You can get away with a dirty implementation that involves alligator clips an the jumper wires. I'll cover this later, but I personally don't recommend it. Soldering is more solid. Using connectors and plugs is even more solid.
+### For PSX functionality:
+- 1 PSX controller cable (either taken from a dead controller, bought new from somewhere, or self-constructed). Must have a 7.6v rumble pin (refer to added reference below for more info).
+- 1 2N2222 (or any NPN) transistor. 2N7000 works just as well.
+- 1 Schottky diode (I used a 1N5822)
 
 ## Installation
 ### Prototyping
@@ -98,6 +102,14 @@ This kind of approach is fine, especially for prototyping. You could run with th
 I went with soldering, and it worked well as long as I was fast about it; the plastic on the FSR could've melted if I was too slow. 
 
 If I didn't have a soldering iron or if I was not willing to learn to use it, this is one of those moments where I would have had to get crafty. The best solution was probably to use actual connectors and plugs, but those weren't something I had around immediately.
+
+#### Setting up PSX cable
+For wiring up your Arduino board for PSX play, refer to [this link](https://github.com/veroxzik/arduino-psx-controller#playstation-wiring) as it will cover most of what will be needed. 
+
+The only addition is instead of wiring the rumble cable directly to Vin/RAW, a Schottky diode will be needed. Wire the rumble lead from PSX cable to the anode (unstriped) end and the Vin/RAW Arduino pin to the cathode (striped) end.
+
+This is to prevent damaging your PC and/or PS1/PS2 when pad is plugged in both, especially when adjusting thresholds.
+
 
 #### Test the Prototype
 I can take my Micro USB cable now to connect the Arduino to my PC. On my PC I had the Arduino IDE installed and running.
