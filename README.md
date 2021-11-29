@@ -49,7 +49,8 @@ Setting up FSRs for gameplay with an app to adjust the sensitivities happens in 
 3. [Run the web client.](https://github.com/vlnguyen/itg-fsr/tree/master/client) Once the client is running, the web app can be accessed by any device with a browser (phone, tablet, computer) to manage user profiles and sensor thresholds for up to two pads.
 
 ## Fork-Specifc Info
-This fork will be focusing on adding PS1/PS2 functionality, making FSR pads usable for mentioned consoles. Side effect is pad will not be usable on PC (unless an adapter is used) and thresholds will be reset once the board loses power, requiring that the board be plugged in both PS and USB when flashing new thresholds. 
+This fork will be focusing on adding PS1/PS2 functionality, making FSR pads usable for mentioned consoles. PC functionality is same as parent so it will be compatible, but this fork has the addition of being able to assign pins as digital inputs (for when using a board with only a limited number of analog pins and other inputs are needed like a Start button). 
+Setting thresholds for PSX play can be done with the board plugged both in PSX controller port and USB. For more information regarding setup for PSX play, refer to #1 in Installation.  
 
 ## Credits
 - Thank you [teejusb](https://github.com/teejusb)! He contributed what I used as a base for the hardware code. It was super easy understand and extend for my own use. ([teejusb/fsr](https://github.com/teejusb/fsr))
