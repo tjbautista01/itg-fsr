@@ -44,7 +44,7 @@ A Force Sensitive Resistor (FSR) is a resistor that changes its resistive value 
 
 ## Installation
 Setting up FSRs for gameplay with an app to adjust the sensitivities happens in three parts.
-1. [Setup the hardware.](https://github.com/vlnguyen/itg-fsr/tree/master/fsr) Connect FSRs into an Arduino and flash it with code that will handle joystick inputs.
+1. [Setup the hardware.](https://github.com/tjbautista01/itg-fsr/tree/master/fsr) Connect FSRs into an Arduino and flash it with code that will handle PC and PSX joystick inputs.
 2. [Stand up the server.](https://github.com/vlnguyen/itg-fsr/tree/master/server) Create API endpoints for interacting with the Arduino and with a local profile database.
 3. [Run the web client.](https://github.com/vlnguyen/itg-fsr/tree/master/client) Once the client is running, the web app can be accessed by any device with a browser (phone, tablet, computer) to manage user profiles and sensor thresholds for up to two pads.
 
